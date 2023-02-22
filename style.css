@@ -1,0 +1,146 @@
+
+
+
+#Tabs {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 20px;
+    border-top: 3px solid purple;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 0;
+    padding: 10px;
+    border-top: 1px solid #cecece;
+    min-height: 82vh;
+}
+
+@media only screen and (max-width: 800px) {
+    div#container {
+        flex-direction: column;
+    }
+}
+
+#title{
+    color: rgba(31, 31, 31, 0.774);
+}
+
+#Title-left {
+    display: flex;
+    justify-content: left;
+    padding: 10;
+    flex: 0 0 10;
+    text-align: center;
+    flex-direction: column;
+    border-right: 1px solid #cecece;
+    padding: 20px;
+    line-height: 5px;
+}
+
+#About-right {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    text-align: left;
+    flex: 1 0 0;  
+    padding: 30px;
+    font-size: large;
+}
+
+img{
+    size: 10px;
+}
+
+div.lists {
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    text-align: center;
+    border-top: 1px solid #cecece;
+    margin-top: auto;
+}
+
+a {
+    flex: 1;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    line-height: 1;
+    color: black;
+  }
+  
+  a:link,
+  a:focus {
+    color: grey;
+  }
+  
+  a:hover {
+    font-weight: bold;
+    color: purple;
+  }
+  
+  a:active,
+  a:visited {
+    font-weight: bold;
+    color: purple;
+  }
+
+  #intro {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  #progress {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .progress-bar{
+    width: auto;
+  }
+
+  #credentials {
+    color: rgb(160, 160, 160);
+  }
+
+  .university {
+    line-height: 0%;
+  }
+
+  .year {
+    line-height: 0%;
+    text-align: right;
+  }
+
+  #phd {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+  }
+
+  #master {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+  }
+
+  #bachelor {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+  }
+
+  #credentials {
+    line-height: 100px;
+  }
+
+  .name {
+    font-weight:bold;
+  }
+
