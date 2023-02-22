@@ -29,6 +29,9 @@
   #Tabs {
     font-size: medium;
   }
+  #copyright {
+    font-size: small;
+  }
 }
 
 /* Desktop */
@@ -39,6 +42,9 @@
   }
   #Tabs {
     font-size: large;
+  }
+  #copyright {
+    font-size: medium;
   }
 }
 
@@ -76,10 +82,11 @@ div.lists {
     flex-direction: row;
 }
 
-footer{
+#copyright {
     text-align: center;
     border-top: 1px solid #cecece;
     margin-top: auto;
+    font-size: smaller;
 }
 
 a {
