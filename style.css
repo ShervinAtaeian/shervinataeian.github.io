@@ -16,7 +16,7 @@
     flex: 1 0 0;
     padding: 10px;
     border-top: 1px solid #cecece;
-    min-height: 82vh;
+    min-height: 84vh;
 }
 
 @media only screen and (max-width: 800px) {
