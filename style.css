@@ -17,33 +17,28 @@
     border-top: 1px solid #cecece;
     min-height: 84vh;
     flex-direction: column;
+    font-size: small;
 }
 
 /* Tablet  */
 @media only screen and (min-width: 600px) {
-    #container {
-        flex-direction: column;
-    }
-    #Tabs {
-      font-size:medium;
-    }
-   div#Universities {
-      font-size: medium;
-    }
-
+  #container {
+    flex-direction: column;
+    font-size: medium;
+  }
+  #Tabs {
+    font-size: medium;
+  }
 }
 
 /* Desktop */
 @media only screen and (min-width: 800px) {
   #container {
-      flex-direction: row;
+    flex-direction: row;
+    font-size: large;
   }
-  p.name {
-    font-weight:bold;
-    font-size: larger;
-  }
-  div#Tabs {
-    font-size:larger;
+  #Tabs {
+    font-size: large;
   }
 }
 
@@ -70,7 +65,6 @@
     text-align: left;
     flex: 1 0 0;  
     padding: 30px;
-    font-size: large;
 }
 
 img{
@@ -110,7 +104,6 @@ a {
   a:active,
   a:visited {
     font-weight: bold;
-    color: purple;
   }
 
   #intro {
@@ -162,7 +155,7 @@ a {
     line-height: 100px;
   }
 
-#Universities {
-  font-size: small
-}
+  .name {
+    font-weight:bold;
+  }
 
