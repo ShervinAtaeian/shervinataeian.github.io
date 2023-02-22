@@ -2,7 +2,7 @@
 #Tabs {
     display: flex;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
     padding: 20px;
     border-top: 3px solid purple;
