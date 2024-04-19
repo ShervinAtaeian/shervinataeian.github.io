@@ -36,15 +36,9 @@
 }
 
 
-.profile-pic {
-  width: 100px; /* Adjust as needed */
-  height: 100px; /* Adjust as needed */
-  border-radius: 50%; /* This makes the image circular */
-  object-fit: cover; /* This ensures the image covers the whole area */
-}
 
 /* Tablet  */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 991px) {
   #container {
     flex-direction: column;
     font-size: medium;
@@ -58,10 +52,17 @@
   footer {
     font-size: small;
   }
+
+  .profile-pic {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%;
+    object-fit: cover;
+  }
 }
 
 /* Desktop */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 992px) {
   #container {
     flex-direction: row;
     font-size: medium;
@@ -88,6 +89,13 @@
     justify-content: space-evenly;
     padding-right: 10px;
     flex: 1 0 0;
+  }
+
+  .profile-pic {
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    border-radius: 50%;
+    object-fit: cover;
   }
 }
 
