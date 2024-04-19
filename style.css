@@ -35,6 +35,14 @@
     font-size: small;
 }
 
+
+.profile-pic {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  border-radius: 50%; /* This makes the image circular */
+  object-fit: cover; /* This ensures the image covers the whole area */
+}
+
 /* Tablet  */
 @media only screen and (min-width: 600px) {
   #container {
