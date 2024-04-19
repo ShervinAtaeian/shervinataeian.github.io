@@ -228,16 +228,6 @@ a {
     color: rgb(160, 160, 160);
   }
 
-  #university {
-    display: flex;
-    line-height: 0%;
-  }
-
-  #year {
-    text-align: right;
-    line-height: 0%;
-  }
-
   #journal {
     display: block;
     font-size:medium;
@@ -247,6 +237,16 @@ a {
     display: flex;
     flex-direction:row;
     justify-content: space-between;
+  }
+
+  #university {
+    display: flex;
+    line-height: 0%;
+  }
+
+  .year {
+    text-align: right;
+    line-height: 0%;
   }
 
   #credentials {
