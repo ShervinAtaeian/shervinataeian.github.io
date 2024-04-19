@@ -36,32 +36,7 @@
 }
 
 
-
-/* Tablet  */
-@media only screen and (min-width: 991px) {
-  #container {
-    flex-direction: column;
-    font-size: medium;
-  }
-  #Tabs {
-    font-size: medium;
-  }
-  #copyright {
-    font-size: small;
-  }
-  footer {
-    font-size: small;
-  }
-
-  .profile-pic {
-    width: 100px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
-    border-radius: 50%;
-    object-fit: cover;
-  }
-}
-
-/* Desktop */
+/* Desktops */
 @media only screen and (min-width: 992px) {
   #container {
     flex-direction: row;
@@ -97,7 +72,75 @@
     border-radius: 50%;
     object-fit: cover;
   }
+
+  .logo {
+    width: 25px; /* Adjust as needed */
+    height: 25px; /* Adjust as needed */
+  }
 }
+
+
+/* Tablets  */
+@media only screen and (max-width: 991px) {
+  #container {
+    flex-direction: column;
+    font-size: medium;
+  }
+  #Tabs {
+    font-size: medium;
+  }
+  #copyright {
+    font-size: small;
+  }
+  footer {
+    font-size: small;
+  }
+
+  .profile-pic {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .logo {
+    width: 25px; /* Adjust as needed */
+    height: 25px; /* Adjust as needed */
+  }
+}
+
+
+/* Smartphones */
+@media (max-width: 767px) {
+  /* Add your CSS rules for smartphones here */
+  #container {
+    flex-direction: column;
+    font-size: small;
+  }
+  #Tabs {
+    font-size: small;
+  }
+  #copyright {
+    font-size: small;
+  }
+  footer {
+    font-size: small;
+  }
+
+  .profile-pic {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .logo {
+    width: 25px; /* Adjust as needed */
+    height: 25px; /* Adjust as needed */
+  }
+}
+
+
 
 #title{
     color: rgba(31, 31, 31, 0.774);
@@ -185,25 +228,19 @@ a {
     color: rgb(160, 160, 160);
   }
 
-  .university {
+  #university {
+    display: flex;
     line-height: 0%;
   }
 
-  .year {
-    line-height: 0%;
+  #year {
     text-align: right;
+    line-height: 0%;
   }
 
-  #phd {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-  }
-
-  #master {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
+  #journal {
+    display: block;
+    font-size:medium;
   }
 
   #bachelor {
@@ -216,8 +253,10 @@ a {
     line-height: 100px;
   }
 
-  .name {
+  #name {
+    display: flex;
     font-weight:bold;
+        line-height: 0%;
   }
 
   .article {
