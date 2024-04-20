@@ -228,7 +228,7 @@ a {
     color: rgb(160, 160, 160);
   }
 
-  #journal {
+  .journal {
     display: block;
     font-size:medium;
   }
@@ -239,22 +239,17 @@ a {
     justify-content: space-between;
   }
 
-  #university {
-    display: flex;
-    line-height: 0%;
-  }
-
   .year {
     text-align: right;
-    line-height: 0%;
+    line-height: 1;
   }
 
   #credentials {
     line-height: 100px;
   }
 
-  #name {
-    display: flex;
+  .name {
+    display: block;
     font-weight:bold;
         line-height: 0%;
   }
