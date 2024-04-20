@@ -237,11 +237,13 @@ a {
     display: flex;
     flex-direction:row;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    align-items: start;   
   }
+
 
   .year {
     text-align: right;
-    line-height: 1;
   }
 
   #credentials {
@@ -251,8 +253,9 @@ a {
   .name {
     display: block;
     font-weight:bold;
-        line-height: 0%;
+    line-height: 1;
   }
+  
 
   .article {
     margin: 10px 0;
