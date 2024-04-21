@@ -135,6 +135,10 @@ body {
   #Tab1, #Tab2 {
     align-items: center;
   }
+
+  .title{
+    font-size: 0.75em; /* Increases the size of the text */
+  }
 }
 
 
@@ -175,10 +179,12 @@ body {
   #Tab1, #Tab2 {
     align-items: center;
   }
+
+  .title{
+    font-size: 0.4em; /* Increases the size of the text */
+  }
 }
 
-
-}
 
 
 
