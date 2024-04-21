@@ -130,6 +130,11 @@ body {
     width: 25px; /* Adjust as needed */
     height: 25px; /* Adjust as needed */
   }
+
+  
+  #Tab1, #Tab2 {
+    align-items: center;
+  }
 }
 
 
@@ -161,6 +166,18 @@ body {
     width: 25px; /* Adjust as needed */
     height: 25px; /* Adjust as needed */
   }
+
+  #address {
+    margin-top: 25px;
+    line-height: 1.25;
+  }
+
+  #Tab1, #Tab2 {
+    align-items: center;
+  }
+}
+
+
 }
 
 
