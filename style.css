@@ -1,4 +1,10 @@
 
+body {
+  font-family: Arial, sans-serif; /* Change 'Arial' to your desired font */
+  font-size: 16px; /* Change '16px' to your desired font size */
+}
+
+
 #Tabs {
     display: flex;
     text-align: center;
@@ -57,13 +63,13 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding-left: 10px;
-    flex: 1 0 0;
+    flex: 1 0 auto;
   }
   #Tab2 {
     flex-direction: row;
     justify-content: space-evenly;
     padding-right: 10px;
-    flex: 1 0 0;
+    flex: 1 0 auto;
   }
 
   .profile-pic {
