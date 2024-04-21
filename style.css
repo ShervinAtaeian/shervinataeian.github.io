@@ -41,6 +41,23 @@ body {
     font-size: small;
 }
 
+#Title-left {
+  display: flex;
+  justify-content: left;
+  padding: 10;
+  flex: 0 0 10;
+  text-align: center;
+  flex-direction: column;
+  border-right: 1px solid #cecece;
+  padding: 20px;
+  line-height: 5px;
+}
+
+#address {
+  margin-top: 100px;
+  line-height: 1.5;
+}
+
 
 /* Desktops */
 @media only screen and (min-width: 992px) {
@@ -150,18 +167,6 @@ body {
 
 #title{
     color: rgba(31, 31, 31, 0.774);
-}
-
-#Title-left {
-    display: flex;
-    justify-content: left;
-    padding: 10;
-    flex: 0 0 10;
-    text-align: center;
-    flex-direction: column;
-    border-right: 1px solid #cecece;
-    padding: 20px;
-    line-height: 5px;
 }
 
 #About-right {
