@@ -16,19 +16,12 @@ body {
     align-items: space-evenly;
 }
 
-#Tab1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 10px;
+#Tab1, #Tab2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-#Tab2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 10px;
-}
 
 
 #container {
@@ -75,6 +68,7 @@ body {
     font-size: medium;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
   }
   #Tab1 {
     flex-direction: row;
@@ -132,12 +126,17 @@ body {
   }
 
   
-  #Tab1, #Tab2 {
-    align-items: center;
+  #Tab1 div, #Tab2 div {
+    width: 50%; /* Adjust this value as needed */
   }
 
   .title{
     font-size: 0.75em; /* Increases the size of the text */
+  }
+
+  #address {
+    margin-top: 25px;
+    line-height: 1.25;
   }
 }
 
@@ -214,7 +213,9 @@ div.lists {
     text-align: center;
     border-top: 1px solid #cecece;
     margin-top: auto;
+    margin-bottom: auto;
     font-size: smaller;
+    text-align: center;
 }
 footer {
   font-size: smaller;
