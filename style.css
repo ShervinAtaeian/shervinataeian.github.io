@@ -291,6 +291,9 @@ a {
     line-height: 1;
   }
 
+  .list1, .list2 {
+    list-style-type: disc;
+  }
 
   #edu {
     display: flex;
