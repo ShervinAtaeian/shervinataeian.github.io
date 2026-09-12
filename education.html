@@ -2,154 +2,164 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>My Website: Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script>
+    <title>Shervin Ataeian — Education</title>
+    <meta name="description" content="Academic background of Shervin Ataeian: PhD in Transportation Engineering at the University of Calgary, MSc in Industrial Engineering, BSc in Industrial Engineering, and professional certificates.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" type="image/x-icon">
   </head>
 
   <body>
-    <!-- content here -->
-    <header>
-        <div id="Tabs">
-            <div id="Tab1"> 
-                <div>
-                    <a href="index.html">About Me</a>
-                </div>
-                <div>
-                    <a href="education.html">Education</a>
-                </div>
-                <div>
-                    <a href="experinece.html">Experience</a>
-                </div>
-                <div>
-                    <a href="publications.html">Publications</a>
-                </div>
-            </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-            <div id="Tab2">
-                <div>
-                    <a href="skills.html">Skills</a>
-                </div>
-                <div>
-                    <a href="interests.html">Interests</a>
-                </div>
-                <div>
-                    <a href="awards.html">Honors and Awards</a>
-                </div>
-                <div>
-                    <a href="contact.html">Contact Me</a>
-                </div>
-            </div>
+    <header class="site-header">
+      <div class="nav-inner">
+        <a href="index.html" class="brand">Shervin <span>Ataeian</span></a>
+        <div class="nav-right">
+          <nav class="site-nav" id="siteNav">
+            <a href="index.html">About</a>
+            <a href="education.html">Education</a>
+            <a href="experinece.html">Experience</a>
+            <a href="publications.html">Publications</a>
+            <a href="skills.html">Skills</a>
+            <a href="interests.html">Interests</a>
+            <a href="awards.html">Awards</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+            <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg>
+          </button>
+          <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+            <svg class="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
         </div>
+      </div>
     </header>
 
-    <div id="container">
+    <main id="main">
+      <div class="page-shell">
 
-        <aside id="Title-left">
-            <div>
-                <img src="Shervin.jpg" class="profile-pic">
+        <aside class="profile-card fade-in">
+          <div class="avatar-ring">
+            <img src="Shervin.jpg" class="avatar" alt="Portrait of Shervin Ataeian">
+          </div>
+          <h1 class="profile-name">Shervin Ataeian</h1>
+          <p class="profile-title">PhD Candidate · EIT</p>
+
+          <div class="social-row">
+            <a class="social-badge" href="https://www.linkedin.com/in/shervin-ataeian-a06121230/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a class="social-badge" href="https://scholar.google.com/citations?user=_E9WfBwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">GS</a>
+            <a class="social-badge" href="https://www.researchgate.net/profile/Shervin-Ataeian" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate">RG</a>
+            <a class="social-badge" href="https://www.instagram.com/shervinataieyan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+          </div>
+
+          <div class="profile-divider"></div>
+
+          <div class="profile-meta">
+            <div class="meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>2500 University Dr NW<br>Calgary, AB, Canada<br>T2N 1N4</span>
             </div>
-            <div>
-                <h1>Shervin Ataeian</h1>
-                <h4>PhD Candidate</h4>
-                <a href="https://www.linkedin.com/in/shervin-ataeian-a06121230/" target="_blank">
-                    <img src="In-Blue-34.png" alt="LinkedIn" class="logo">
-                </a>
-                <a href="https://scholar.google.com/citations?user=_E9WfBwAAAAJ&hl=en" target="_blank">
-                    <img src="768px-Google_Scholar_logo.svg.png" alt="Google Scholar" class="logo">
-                </a>
-                <a href="https://www.researchgate.net/profile/Shervin-Ataeian" target="_blank">
-                    <img src="RG.png" alt="ResearchGate" class="logo">
-                </a>
-                <a href="https://www.instagram.com/shervinataieyan/" target="_blank">
-                    <img src="Instagram.jpg" alt="Instagram" class="logo">
-                </a>
-            </div>
-            <div id="address">
-                2500 University Dr NW<br>Calgary, AB, Canada<br>T2N 1N4<br>
-                <a href="mailto:shervin.ataieyan@gmail.com">
-                    <img src="email.png" alt="Email" class="logo">
-                </a>
-            </div>
+            <a class="meta-row meta-link" href="mailto:shervin.ataeian@ucalgary.ca">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>shervin.ataeian@ucalgary.ca</span>
+            </a>
+            <a class="meta-row meta-link" href="mailto:shervin.ataieyan@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>shervin.ataieyan@gmail.com</span>
+            </a>
+          </div>
         </aside>
 
-        <aside id="About-right">
+        <section class="content-card fade-in">
+          <div class="section-head">
+            <span class="eyebrow">Academic Background</span>
+            <h2>Education</h2>
+          </div>
 
-            <div id="title">
-                <h3 class="title"> Education </h3>
-            </div>
+          <ol class="timeline">
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-top">
+                <h3>PhD in Transportation Engineering</h3>
+                <span class="badge">2022 – Present</span>
+              </div>
+              <p class="timeline-org">University of Calgary — Calgary, Canada · GPA: 4.00/4.00</p>
+              <p class="timeline-desc"><strong>Research:</strong> Deep Reinforcement Learning–based real-time scheduling for connected and autonomous public transport</p>
+            </li>
 
-            <div id="Universities">
-                <div id="edu">
-                    <div class="university">
-                        <h3 class="name">PhD in Civil Engineering</h3>
-                        <p>University of Calgary</p>
-                        <p><b>Thesis Title: </b>Real-Time Scheduling of Autonomous and Connected <br>Public Transport Systems at the Network Level</p>
-                    </div>
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-top">
+                <h3>Summer School in Public Transport</h3>
+                <span class="badge">2022</span>
+              </div>
+              <p class="timeline-org">Stuttgart University — Stuttgart, Germany</p>
+            </li>
 
-                    <div class="year">
-                        <p>2022-present</p>
-                        <p>Calgary, Canada</p>
-                    </div>
-                </div>
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-top">
+                <h3>MSc in Industrial Engineering</h3>
+                <span class="badge">2014 – 2017</span>
+              </div>
+              <p class="timeline-org">Urmia University — Urmia, Iran · Ranked 2nd of 11</p>
+              <p class="timeline-desc"><strong>Thesis:</strong> Mathematical optimization for bus line timetabling using Genetic Algorithms</p>
+            </li>
 
-                <hr  class="stylish">
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-top">
+                <h3>BSc in Industrial Engineering</h3>
+                <span class="badge">2010 – 2014</span>
+              </div>
+              <p class="timeline-org">University of Tabriz — Tabriz, Iran</p>
+            </li>
+          </ol>
 
-                <div id="edu">
-                    <div class="university">
-                        <h3 class="name">Summer School in Public Transport</h3>
-                        <p>Stuttgart University</p>
-                    </div>
+          <div class="section-head" style="margin-top:36px">
+            <span class="eyebrow">Continuing Education</span>
+            <h2>Certificates &amp; Training</h2>
+          </div>
 
-                    <div class="year">
-                        <p>2022</p>
-                        <p>Stuttgart, Germany</p>
-                    </div>
-                </div>
+          <ul class="badge-list">
+            <li class="badge-item"><span class="badge-year">2025</span><span class="badge-text">Quantum Computing</span></li>
+            <li class="badge-item"><span class="badge-year">2024</span><span class="badge-text">Mitacs Presentation Skills</span></li>
+            <li class="badge-item"><span class="badge-year">2024</span><span class="badge-text">Mitacs Leadership Skills</span></li>
+            <li class="badge-item"><span class="badge-year">2024</span><span class="badge-text">Mitacs Reconciliation and EDI</span></li>
+            <li class="badge-item"><span class="badge-year">2022</span><span class="badge-text">Certificate of Training on Transportation Modeling with EMME</span></li>
+            <li class="badge-item"><span class="badge-year">2022</span><span class="badge-text">Theories and Practice in Postsecondary Teaching and Learning</span></li>
+            <li class="badge-item"><span class="badge-year">2021</span><span class="badge-text">Certificate of Excellence in Reviewing — Asian Journal of Advances in Research</span></li>
+            <li class="badge-item"><span class="badge-year">2020</span><span class="badge-text">Certificate of Excellence in Reviewing — Current Journal of Applied Science and Technology</span></li>
+            <li class="badge-item"><span class="badge-year">2016</span><span class="badge-text">Creating a Macroscopic 4-Step Transport Model with PTV Visum — PTV Group</span></li>
+            <li class="badge-item"><span class="badge-year">2016</span><span class="badge-text">Introduction to Macroscopic Network Modelling with PTV Visum — PTV Group</span></li>
+            <li class="badge-item"><span class="badge-year">2013</span><span class="badge-text">Microsoft Project and PMBOK Standard — Diba Mehr Tabriz</span></li>
+            <li class="badge-item"><span class="badge-year">2009</span><span class="badge-text">Advanced Proficiency in English — Iran Language Institute (ranked top student)</span></li>
+            <li class="badge-item"><span class="badge-year">2007</span><span class="badge-text">ICDL (7 Skills) — Management and Planning Organization of West Azerbaijan</span></li>
+          </ul>
+        </section>
 
-                <hr  class="stylish">
+      </div>
+    </main>
 
-                <div id="edu">
-                    <div class="university">
-                        <h3 class="name">MSc in Industrial Engineering</h3>
-                        <p>Urmia University</p>
-                        <p><b>Thesis Title: </b>A Mathematical Programming Model for Optimal Bus<br> Line Timetable Setting</p>
-                    </div>
-
-                    <div class="year">
-                        <p>2014-2017</p>
-                        <p>Urmia, Iran</p>
-                    </div>
-                </div>
-
-                <hr  class="stylish">
-
-                <div id="edu">
-                    <div class="university">
-                        <h3 class="name">BSc in Industrial Engineering</h3>
-                        <p>University of Tabriz</p>
-                    </div>
-
-                    <div class="year">
-                        <p>2010-2014</p>
-                        <p>Tabriz, Iran</p>
-                    </div>
-                </div>
-
-                <p id="credentials">
-                    Credentials are available upon request.
-                </p>
-            </div>
-            
-        </aside>
-
-    </div>
-
-    <footer>
-        <div id="copyright">
-            <p> &copy; Shervin Ataeian 2025</p>
-        </div>
+    <footer class="site-footer">
+      <p>&copy; Shervin Ataeian 2025</p>
     </footer>
-          
+
+    <script src="main.js" defer></script>
   </body>
 </html>

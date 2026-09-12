@@ -2,173 +2,262 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>My Website: Skills</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script>
+    <title>Shervin Ataeian — Skills</title>
+    <meta name="description" content="Technical, software, and soft skills of Shervin Ataeian, spanning deep reinforcement learning, quantum optimization, transportation planning software, and languages.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" type="image/x-icon">
   </head>
 
   <body>
-    <!-- content here -->
-    <header>
-        <div id="Tabs">
-            <div id="Tab1"> 
-                <div>
-                    <a href="index.html">About Me</a>
-                </div>
-                <div>
-                    <a href="education.html">Education</a>
-                </div>
-                <div>
-                    <a href="experinece.html">Experience</a>
-                </div>
-                <div>
-                    <a href="publications.html">Publications</a>
-                </div>
-            </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-            <div id="Tab2">
-                <div>
-                    <a href="skills.html">Skills</a>
-                </div>
-                <div>
-                    <a href="interests.html">Interests</a>
-                </div>
-                <div>
-                    <a href="awards.html">Honors and Awards</a>
-                </div>
-                <div>
-                    <a href="contact.html">Contact Me</a>
-                </div>
-            </div>
+    <header class="site-header">
+      <div class="nav-inner">
+        <a href="index.html" class="brand">Shervin <span>Ataeian</span></a>
+        <div class="nav-right">
+          <nav class="site-nav" id="siteNav">
+            <a href="index.html">About</a>
+            <a href="education.html">Education</a>
+            <a href="experinece.html">Experience</a>
+            <a href="publications.html">Publications</a>
+            <a href="skills.html">Skills</a>
+            <a href="interests.html">Interests</a>
+            <a href="awards.html">Awards</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+            <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg>
+          </button>
+          <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+            <svg class="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
         </div>
+      </div>
     </header>
 
-    <div id="container">
+    <main id="main">
+      <div class="page-shell">
 
-        <aside id="Title-left">
-            <div>
-                <img src="Shervin.jpg" class="profile-pic">
+        <aside class="profile-card fade-in">
+          <div class="avatar-ring">
+            <img src="Shervin.jpg" class="avatar" alt="Portrait of Shervin Ataeian">
+          </div>
+          <h1 class="profile-name">Shervin Ataeian</h1>
+          <p class="profile-title">PhD Candidate · EIT</p>
+
+          <div class="social-row">
+            <a class="social-badge" href="https://www.linkedin.com/in/shervin-ataeian-a06121230/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a class="social-badge" href="https://scholar.google.com/citations?user=_E9WfBwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">GS</a>
+            <a class="social-badge" href="https://www.researchgate.net/profile/Shervin-Ataeian" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate">RG</a>
+            <a class="social-badge" href="https://www.instagram.com/shervinataieyan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+          </div>
+
+          <div class="profile-divider"></div>
+
+          <div class="profile-meta">
+            <div class="meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>2500 University Dr NW<br>Calgary, AB, Canada<br>T2N 1N4</span>
             </div>
-            <div>
-                <h1>Shervin Ataeian</h1>
-                <h4>PhD Candidate</h4>
-                <a href="https://www.linkedin.com/in/shervin-ataeian-a06121230/" target="_blank">
-                    <img src="In-Blue-34.png" alt="LinkedIn" class="logo">
-                </a>
-                <a href="https://scholar.google.com/citations?user=_E9WfBwAAAAJ&hl=en" target="_blank">
-                    <img src="768px-Google_Scholar_logo.svg.png" alt="Google Scholar" class="logo">
-                </a>
-                <a href="https://www.researchgate.net/profile/Shervin-Ataeian" target="_blank">
-                    <img src="RG.png" alt="ResearchGate" class="logo">
-                </a>
-                <a href="https://www.instagram.com/shervinataieyan/" target="_blank">
-                    <img src="Instagram.jpg" alt="Instagram" class="logo">
-                </a>
-            </div>
-            <div id="address">
-                2500 University Dr NW<br>Calgary, AB, Canada<br>T2N 1N4<br>
-                <a href="mailto:shervin.ataieyan@gmail.com">
-                    <img src="email.png" alt="Email" class="logo">
-                </a>
-            </div>
+            <a class="meta-row meta-link" href="mailto:shervin.ataeian@ucalgary.ca">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>shervin.ataeian@ucalgary.ca</span>
+            </a>
+            <a class="meta-row meta-link" href="mailto:shervin.ataieyan@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>shervin.ataieyan@gmail.com</span>
+            </a>
+          </div>
         </aside>
 
-        <aside id="About-right">
+        <section class="content-card fade-in">
+          <div class="section-head">
+            <span class="eyebrow">Capabilities</span>
+            <h2>Skills</h2>
+          </div>
 
-            <div id="title">
-                <h3 class="title"> Skills </h3>
+          <p class="muted-note" style="margin-top:-12px; margin-bottom:28px;">Proficiency levels below are self-assessed estimates.</p>
+
+          <div class="skills-groups">
+
+            <div class="skill-group">
+              <h3>Machine Learning &amp; Optimization</h3>
+
+              <div class="skill" style="--pct:85%">
+                <div class="skill-head"><span>Deep Reinforcement Learning</span><span class="skill-pct">85%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Deep Reinforcement Learning"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:80%">
+                <div class="skill-head"><span>Mathematical Modeling</span><span class="skill-pct">80%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Mathematical Modeling"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:65%">
+                <div class="skill-head"><span>Quantum &amp; Quantum-Inspired Optimization (QUBO/QUDO)</span><span class="skill-pct">65%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Quantum and Quantum-Inspired Optimization"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:50%">
+                <div class="skill-head"><span>Metaheuristics (GA, NSGA-II)</span><span class="skill-pct">50%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Metaheuristics"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:40%">
+                <div class="skill-head"><span>Machine Learning</span><span class="skill-pct">40%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="Machine Learning"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:35%">
+                <div class="skill-head"><span>Cloud Computing (AWS/Azure)</span><span class="skill-pct">35%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" aria-label="Cloud Computing"><div class="skill-fill"></div></div>
+              </div>
             </div>
 
-            <div>
-                <h3>Technical Skills:</h3>
-                <div id="progress">
-                    <label class="labels" for="progress-bar">Mathematical Modeling</label>
-                    <progress class="progress-bar" value="80" max="100">80 %</progress>
-                    <label class="labels" for="progress-bar">Reinforcement Learning</label>
-                    <progress class="progress-bar" value="65" max="100">65 %</progress>
-                    <label class="labels" for="progress-bar">Metaheuristics</label>
-                    <progress class="progress-bar" value="50" max="100">50 %</progress>
-                    <label class="labels" for="progress-bar">Machine Learning</label>
-                    <progress class="progress-bar" value="40" max="100">40 %</progress>
-                    <label class="labels" for="progress-bar">Cloud Computing</label>
-                    <progress class="progress-bar" value="35" max="100">35 %</progress>
-                </div>
+            <div class="skill-group">
+              <h3>Programming &amp; Tools</h3>
+
+              <div class="skill" style="--pct:85%">
+                <div class="skill-head"><span>HTML</span><span class="skill-pct">85%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="HTML"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:70%">
+                <div class="skill-head"><span>CSS</span><span class="skill-pct">70%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="CSS"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:60%">
+                <div class="skill-head"><span>Python</span><span class="skill-pct">60%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Python"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:50%">
+                <div class="skill-head"><span>MATLAB</span><span class="skill-pct">50%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="MATLAB"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:50%">
+                <div class="skill-head"><span>GAMS</span><span class="skill-pct">50%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="GAMS"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:40%">
+                <div class="skill-head"><span>R</span><span class="skill-pct">40%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="R"><div class="skill-fill"></div></div>
+              </div>
             </div>
 
-            <hr  class="stylish">
+            <div class="skill-group">
+              <h3>Software &amp; Platforms</h3>
 
-            <div>
-                <h3>Software and Programming Skills:</h3>
-                <div id="progress">
-                    <label class="labels" for="progress-bar">Python Programming</label>
-                    <progress class="progress-bar" value="60" max="100">60 %</progress>
-                    <label class="labels" for="progress-bar">MATLAB Programming</label>
-                    <progress class="progress-bar" value="50" max="100">50 %</progress>
-                    <label class="labels" for="progress-bar">R Programming</label>
-                    <progress class="progress-bar" value="40" max="100">40 %</progress>
-                    <label class="labels" for="progress-bar">GAMS Programming</label>
-                    <progress class="progress-bar" value="50" max="100">50 %</progress>
-                    <label class="labels" for="progress-bar">PTV Visum</label>
-                    <progress class="progress-bar" value="70" max="100">70 %</progress>
-                    <label class="labels" for="progress-bar">HTML</label>
-                    <progress Class="progress-bar" value="85" max="100">85 %</progress>
-                    <label class="labels" for="progress-bar">CSS </label>
-                    <progress class="progress-bar" value="70" max="100">70 %</progress>
-                </div>
+              <div class="skill" style="--pct:75%">
+                <div class="skill-head"><span>Microsoft Office</span><span class="skill-pct">75%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Microsoft Office"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:70%">
+                <div class="skill-head"><span>PTV Visum</span><span class="skill-pct">70%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="PTV Visum"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:55%">
+                <div class="skill-head"><span>Streamlit</span><span class="skill-pct">55%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="Streamlit"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:50%">
+                <div class="skill-head"><span>EMME</span><span class="skill-pct">50%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="EMME"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:45%">
+                <div class="skill-head"><span>ArcGIS</span><span class="skill-pct">45%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="ArcGIS"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:45%">
+                <div class="skill-head"><span>Power BI</span><span class="skill-pct">45%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="Power BI"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:45%">
+                <div class="skill-head"><span>Tableau</span><span class="skill-pct">45%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="Tableau"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:40%">
+                <div class="skill-head"><span>Minitab</span><span class="skill-pct">40%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="Minitab"><div class="skill-fill"></div></div>
+              </div>
             </div>
 
-            <hr  class="stylish">
+            <div class="skill-group">
+              <h3>Soft Skills</h3>
 
-
-            <div>
-                <h3>Soft Skills:</h3>
-                <div id="progress">
-                    <label class="labels" for="progress-bar">Presentation</label>
-                    <progress class="progress-bar" value="90" max="100">90 %</progress>
-                    <label class="labels" for="progress-bar">Time Management</label>
-                    <progress class="progress-bar" value="90" max="100">90 %</progress>
-                    <label class="labels" for="progress-bar">Problem Solving</label>
-                    <progress class="progress-bar" value="90" max="100">90 %</progress>
-                    <label class="labels" for="progress-bar">Critical Thinking</label>
-                    <progress class="progress-bar" value="85" max="100">85 %</progress>
-                    <label class="labels" for="progress-bar">Leadership</label>
-                    <progress class="progress-bar" value="80" max="100">80 %</progress>
-                    <label class="labels" for="progress-bar">Collaboration</label>
-                    <progress class="progress-bar" value="85" max="100">85 %</progress>
-                    <label class="labels" for="progress-bar">Communication</label>
-                    <progress class="progress-bar" value="85" max="100">85 %</progress>
-                </div>
+              <div class="skill" style="--pct:90%">
+                <div class="skill-head"><span>Presentation</span><span class="skill-pct">90%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Presentation"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:90%">
+                <div class="skill-head"><span>Time Management</span><span class="skill-pct">90%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Time Management"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:90%">
+                <div class="skill-head"><span>Problem Solving</span><span class="skill-pct">90%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Problem Solving"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:85%">
+                <div class="skill-head"><span>Critical Thinking</span><span class="skill-pct">85%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Critical Thinking"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:80%">
+                <div class="skill-head"><span>Leadership</span><span class="skill-pct">80%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Leadership"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:85%">
+                <div class="skill-head"><span>Collaboration</span><span class="skill-pct">85%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Collaboration"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:85%">
+                <div class="skill-head"><span>Communication</span><span class="skill-pct">85%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Communication"><div class="skill-fill"></div></div>
+              </div>
             </div>
 
-            <hr  class="stylish">
+            <div class="skill-group">
+              <h3>Languages</h3>
 
-            <div>
-                <h3>Languages:</h3>
-                <div id="progress">
-                    <label class="labels" for="progress-bar">English</label>
-                    <progress class="progress-bar" value="75" max="100">75 %</progress>
-                    <label class="labels" for="progress-bar">Persian</label>
-                    <progress class="progress-bar" value="95" max="100">95 %</progress>
-                    <label class="labels" for="progress-bar">South Azerbaijani</label>
-                    <progress class="progress-bar" value="85" max="100">85 %</progress>
-                    <label class="labels" for="progress-bar">Spanish</label>
-                    <progress class="progress-bar" value="20" max="100">20 %</progress>
-                    <label class="labels" for="progress-bar">Arabic</label>
-                    <progress Class="progress-bar" value="20" max="100">20 %</progress>
-
-                </div>
+              <div class="skill" style="--pct:95%">
+                <div class="skill-head"><span>Persian (Native)</span><span class="skill-pct">95%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Persian"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:90%">
+                <div class="skill-head"><span>Turkish (Native)</span><span class="skill-pct">90%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Turkish"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:75%">
+                <div class="skill-head"><span>English (Fluent)</span><span class="skill-pct">75%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="English"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:20%">
+                <div class="skill-head"><span>Spanish (Elementary)</span><span class="skill-pct">20%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" aria-label="Spanish"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" style="--pct:20%">
+                <div class="skill-head"><span>French (Elementary)</span><span class="skill-pct">20%</span></div>
+                <div class="skill-track" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" aria-label="French"><div class="skill-fill"></div></div>
+              </div>
             </div>
 
-            
-        </aside>
+          </div>
+        </section>
 
-    </div>
+      </div>
+    </main>
 
-    <footer>
-        <div id="copyright">
-            <p> &copy; Shervin Ataeian 2025</p>
-        </div>
+    <footer class="site-footer">
+      <p>&copy; Shervin Ataeian 2025</p>
     </footer>
-          
+
+    <script src="main.js" defer></script>
   </body>
 </html>

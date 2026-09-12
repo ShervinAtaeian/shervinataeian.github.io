@@ -1,0 +1,332 @@
+
+body {
+  font-family: Arial, sans-serif; /* Change 'Arial' to your desired font */
+  font-size: 16px; /* Change '16px' to your desired font size */
+}
+
+
+#Tabs {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid purple;
+    font-size:small;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: space-evenly;
+}
+
+#Tab1, #Tab2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+#container {
+    display: flex;
+    flex: 1 0 0;
+    padding: 10px;
+    border-top: 1px solid #cecece;
+    min-height: 84vh;
+    flex-direction: column;
+    font-size: small;
+}
+
+#Title-left {
+  display: flex;
+  justify-content: left;
+  padding: 10;
+  flex: 0 0 10;
+  text-align: center;
+  flex-direction: column;
+  border-right: 1px solid #cecece;
+  padding: 20px;
+  line-height: 5px;
+}
+
+#address {
+  margin-top: 100px;
+  line-height: 1.5;
+}
+
+
+/* Desktops */
+@media only screen and (min-width: 992px) {
+  #container {
+    flex-direction: row;
+    font-size: medium;
+  }
+  #copyright {
+    font-size: small;
+  }
+  footer {
+    font-size: small;
+  }
+  #Tabs {
+    font-size: medium;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #Tab1 {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    flex: 1 0 auto;
+  }
+  #Tab2 {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 10px;
+    flex: 1 0 auto;
+  }
+
+  .profile-pic {
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .logo {
+    width: 25px; /* Adjust as needed */
+    height: 25px; /* Adjust as needed */
+  }
+}
+
+
+/* Tablets  */
+@media only screen and (max-width: 991px) {
+  #container {
+    flex-direction: column;
+    font-size: medium;
+  }
+  #Tabs {
+    font-size: medium;
+  }
+  #copyright {
+    font-size: small;
+  }
+  footer {
+    font-size: small;
+  }
+
+  .profile-pic {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .logo {
+    width: 25px; /* Adjust as needed */
+    height: 25px; /* Adjust as needed */
+  }
+
+  
+  #Tab1 div, #Tab2 div {
+    width: 50%; /* Adjust this value as needed */
+  }
+
+  .title{
+    font-size: 0.75em; /* Increases the size of the text */
+  }
+
+  #address {
+    margin-top: 25px;
+    line-height: 1.25;
+  }
+}
+
+
+/* Smartphones */
+@media (max-width: 767px) {
+  /* Add your CSS rules for smartphones here */
+  #container {
+    flex-direction: column;
+    font-size: small;
+  }
+  #Tabs {
+    font-size: small;
+  }
+  #copyright {
+    font-size: small;
+  }
+  footer {
+    font-size: small;
+  }
+
+  .profile-pic {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .logo {
+    width: 25px; /* Adjust as needed */
+    height: 25px; /* Adjust as needed */
+  }
+
+  #address {
+    margin-top: 25px;
+    line-height: 1.25;
+  }
+
+  #Tab1, #Tab2 {
+    align-items: center;
+  }
+
+  .title{
+    font-size: 0.4em; /* Increases the size of the text */
+  }
+}
+
+
+
+
+#title{
+    color: rgba(31, 31, 31, 0.774);
+}
+
+#About-right {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    text-align: left;
+    flex: 1 0 0;  
+    padding: 30px;
+}
+
+img{
+    size: 10px;
+}
+
+div.lists {
+    display: flex;
+    flex-direction: row;
+}
+
+#copyright {
+    text-align: center;
+    border-top: 1px solid #cecece;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: smaller;
+    text-align: center;
+}
+footer {
+  font-size: smaller;
+}
+
+a {
+    flex: 1;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    line-height: 1;
+    color: black;
+  }
+  
+  a:link,
+  a:focus {
+    color: grey;
+  }
+  
+  a:hover {
+    font-weight: bold;
+    color: purple;
+  }
+  
+  a:active,
+  a:visited {
+    font-weight: bold;
+  }
+
+  #intro {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  #progress {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .progress-bar{
+    width: auto;
+  }
+
+  #credentials {
+    color: rgb(160, 160, 160);
+  }
+
+  .journal {
+    display: block;
+    font-size:medium;
+  }
+
+  #bachelor {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    align-items: start;   
+  }
+
+
+  .year {
+    text-align: right;
+  }
+
+  #credentials {
+    line-height: 100px;
+  }
+
+  .name {
+    display: block;
+    font-weight:bold;
+    line-height: 1;
+  }
+
+  .list1, .list2 {
+    list-style-type: disc;
+  }
+
+  #edu {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    align-items: start; 
+  }
+  
+
+  .article {
+    margin: 10px 0;
+  }
+
+  #list {
+    text-align: justify;
+  }
+
+ 
+  hr.stylish {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  .title{
+      font-size: 1.5em; /* Increases the size of the text */
+      color: #000000; /* Changes the text color to tomato */
+      text-shadow: 1px 1px 2px #000000; /* Adds a shadow to the text */
+  }
+
+  .lists {
+    line-height: 1.5;
+  }
+
+

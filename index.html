@@ -1,129 +1,236 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>My Website:About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', t);
+            } catch (e) { }
+        })();
+    </script>
+    <title>Shervin Ataeian — About</title>
+    <meta name="description"
+        content="Shervin Ataeian is a Transportation Engineer and registered Engineer-in-Training (EIT) specializing in deep reinforcement learning, quantum optimization, and data-driven public transport operations.">
+    <meta property="og:title" content="Shervin Ataeian — Transportation Engineer &amp; Data Scientist">
+    <meta property="og:description"
+        content="Deep reinforcement learning, quantum optimization, and data-driven public transport research.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shervinataeian.github.io/">
+    <meta property="og:image" content="https://shervinataeian.github.io/Shervin.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="favicon.png" type="image/x-icon">
-  </head>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Shervin Ataeian",
+      "url": "https://shervinataeian.github.io/",
+      "image": "https://shervinataeian.github.io/Shervin.jpg",
+      "jobTitle": "PhD Candidate, Transportation Engineering",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Calgary"
+      },
+      "email": "mailto:shervin.ataeian@ucalgary.ca",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2500 University Dr NW",
+        "addressLocality": "Calgary",
+        "addressRegion": "AB",
+        "postalCode": "T2N 1N4",
+        "addressCountry": "CA"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/shervin-ataeian-a06121230/",
+        "https://scholar.google.com/citations?user=_E9WfBwAAAAJ&hl=en",
+        "https://www.researchgate.net/profile/Shervin-Ataeian",
+        "https://www.instagram.com/shervinataieyan/"
+      ]
+    }
+    </script>
+</head>
 
-  <body>
-    <!-- content here -->
-    <header>
-        <div id="Tabs">
-            <div id="Tab1"> 
-                <div>
-                    <a href="index.html">About Me</a>
-                </div>
-                <div>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="nav-inner">
+            <a href="index.html" class="brand">Shervin <span>Ataeian</span></a>
+            <div class="nav-right">
+                <nav class="site-nav" id="siteNav">
+                    <a href="index.html">About</a>
                     <a href="education.html">Education</a>
-                </div>
-                <div>
                     <a href="experinece.html">Experience</a>
-                </div>
-                <div>
                     <a href="publications.html">Publications</a>
-                </div>
-            </div>
-
-            <div id="Tab2">
-                <div>
                     <a href="skills.html">Skills</a>
-                </div>
-                <div>
                     <a href="interests.html">Interests</a>
-                </div>
-                <div>
-                    <a href="awards.html">Honors and Awards</a>
-                </div>
-                <div>
-                    <a href="contact.html">Contact Me</a>
-                </div>
+                    <a href="awards.html">Awards</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+                    <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Toggle menu"
+                    aria-expanded="false" aria-controls="siteNav">
+                    <svg class="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
             </div>
-            
         </div>
     </header>
 
-    <div id="container">
+    <main id="main">
+        <div class="page-shell">
 
-        <aside id="Title-left">
-            <div>
-                <img src="Shervin.jpg" class="profile-pic">
-            </div>
-            <div>
-                <h1>Shervin Ataeian</h1>
-                <h4>PhD Candidate</h4>
-                <a href="https://www.linkedin.com/in/shervin-ataeian-a06121230/" target="_blank">
-                    <img src="In-Blue-34.png" alt="LinkedIn" class="logo">
-                </a>
-                <a href="https://scholar.google.com/citations?user=_E9WfBwAAAAJ&hl=en" target="_blank">
-                    <img src="768px-Google_Scholar_logo.svg.png" alt="Google Scholar" class="logo">
-                </a>
-                <a href="https://www.researchgate.net/profile/Shervin-Ataeian" target="_blank">
-                    <img src="RG.png" alt="ResearchGate" class="logo">
-                </a>
-                <a href="https://www.instagram.com/shervinataieyan/" target="_blank">
-                    <img src="Instagram.jpg" alt="Instagram" class="logo">
-                </a>
-            </div> 
-            <div id="address">
-                2500 University Dr NW<br>Calgary, AB, Canada<br>T2N 1N4<br>
-                <a href="mailto:shervin.ataieyan@gmail.com">
-                    <img src="email.png" alt="Email" class="logo">
-                </a>
-            </div>
-        </aside>
+            <aside class="profile-card fade-in">
+                <div class="avatar-ring">
+                    <img src="Shervin.jpg" class="avatar" alt="Portrait of Shervin Ataeian">
+                </div>
+                <h1 class="profile-name">Shervin Ataeian</h1>
+                <p class="profile-title">PhD Candidate · EIT</p>
 
-        <aside id="About-right">
-
-            <div id="title">
-                <h3 class="title"> Introduction </h3>
-            </div>
-
-            <div id="intro">
-                <p> 
-                    I am a Transportation Engineer and Data Scientist with a strong foundation in mobility analytics, holding an MSc in Industrial Engineering and soon to be graduated with a PhD in Transport Engineering. Proven experience in data analysis, mathematical modelling, and the application of Python for transport and mobility-related projects. Skilled in transport planning concepts, statistical analysis, and cross-functional collaboration. Experienced in defining and analyzing transport performance metrics and KPIs to inform data-driven decision-making. Extensive experience working with network-level transit data from different countries, contributing to applied research and real-world mobility insights. Bilingual in English, Farsi, Azerbaijani, and familiar with basic Spanish, with a deep interest in leveraging big data to improve urban mobility systems.      
-                </p>
-
-                <p>
-                    My fields of interest include: 
-                </p>
-            </div>
-
-            <div id="lists">
-                <div class="list" style="float: left; width: 50%;">
-                    <ul list-style-type: checkbox;>
-                    <li>Public Transport Planning and Operations</li>
-                    <li>Intelligent Transportation Systems and Smart Mobility Services</li>
-                    <li>Autonomous Transport Systems</li>
-                    <li>Smart Mobility Services</li>
-                    <li>Applications of Operations Research<br> in Transportation Engineering</li>
-                    <li>Mathematical Modeling</li>
-                    </ul>
+                <div class="social-row">
+                    <a class="social-badge" href="https://www.linkedin.com/in/shervin-ataeian-a06121230/"
+                        target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+                    <a class="social-badge" href="https://scholar.google.com/citations?user=_E9WfBwAAAAJ&hl=en"
+                        target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">GS</a>
+                    <a class="social-badge" href="https://www.researchgate.net/profile/Shervin-Ataeian" target="_blank"
+                        rel="noopener noreferrer" aria-label="ResearchGate">RG</a>
+                    <a class="social-badge" href="https://www.instagram.com/shervinataieyan/" target="_blank"
+                        rel="noopener noreferrer" aria-label="Instagram">IG</a>
                 </div>
 
-                <div class="list" style="float: right; width: 50%;">
-                    <ul list-style-type: checkbox;>
-                    <li>Urban Mobility & Public Transport Systems Planning and Operations</li>
-                    <li>Optimization in Public Transport</li>
-                    <li>Mobility Analytics & Big Data Applications</li>
-                    <li>Data-Driven Decision Making in Transportation</li>
-                    <li>Smart and Advanced Data Sources</li>
-                    <li>Applied Machine Learning in Transport</li>
-                    </ul>
+                <div class="profile-divider"></div>
+
+                <div class="profile-meta">
+                    <div class="meta-row">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>2500 University Dr NW<br>Calgary, AB, Canada<br>T2N 1N4</span>
+                    </div>
+                    <a class="meta-row meta-link" href="mailto:shervin.ataeian@ucalgary.ca">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>shervin.ataeian@ucalgary.ca</span>
+                    </a>
+                    <a class="meta-row meta-link" href="mailto:shervin.ataieyan@gmail.com">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>shervin.ataieyan@gmail.com</span>
+                    </a>
                 </div>
-            </div>
-            
-        </aside>
+            </aside>
 
-    </div>
+            <section class="content-card fade-in">
+                <div class="section-head">
+                    <span class="eyebrow">Introduction</span>
+                    <h2>About Me</h2>
+                </div>
 
-    <footer>
-        <div id="copyright">
-            <p> &copy; Shervin Ataeian 2025</p>
+                <p class="lead">
+                    I am a Transportation Engineer and registered Engineer-in-Training (EIT) with a multidisciplinary
+                    background in Industrial Engineering, experienced in optimization for bus and rail transit systems
+                    using machine learning methods and AVL, APC, AFC, and GTFS data. I have taken transportation
+                    initiatives from data-driven analysis through to executive-approved strategy, including leading the
+                    University of Calgary's first campus EV charging infrastructure strategy planning, feasibility
+                    analysis, cost-recovery modeling, and rollout presentation to senior leadership. I combine deep
+                    domain expertise with technical fluency to translate complex operational data and KPIs into clear,
+                    actionable insights for diverse stakeholders, with hands-on experience across Canadian, Australian,
+                    New Zealand, Polish, and Iranian transit networks.
+                </p>
+
+                <div class="stat-strip">
+                    <div class="stat"><span class="stat-num">16</span><span class="stat-label">Publications</span></div>
+                    <div class="stat"><span class="stat-num">2022</span><span class="stat-label">PhD Candidate Since</span></div>
+                    <div class="stat"><span class="stat-num">5</span><span class="stat-label">Languages</span></div>
+                    <div class="stat"><span class="stat-num">13</span><span class="stat-label">Honors &amp; Awards</span></div>
+                </div>
+
+                <p class="affiliations">
+                    <strong>Professional Affiliations:</strong> Engineer-in-Training (EIT), Association of Professional
+                    Engineers and Geoscientists of Alberta (APEGA) · Member, Institution of Civil Engineers (ICE)
+                </p>
+
+                <h3 class="sub-head">Core Competencies</h3>
+
+                <div class="competency-grid">
+                    <div class="competency">
+                        <h4>Transportation &amp; Rail Systems</h4>
+                        <p>Transit and rail operations planning, network/schedule performance analysis, service
+                            reliability and resilience, and rail dwell-time and infrastructure planning studies across
+                            Canadian, Australian, New Zealand, Polish, and Iranian transit networks.</p>
+                    </div>
+                    <div class="competency">
+                        <h4>Strategic Delivery &amp; Leadership</h4>
+                        <p>Led infrastructure strategy planning end-to-end; experienced coordinating cross-functional
+                            stakeholders, mentoring junior researchers as a thesis advisor, and presenting technical
+                            findings to non-technical audiences.</p>
+                    </div>
+                    <div class="competency">
+                        <h4>Deep Reinforcement Learning &amp; Optimization</h4>
+                        <p>Deep Reinforcement Learning (DRL) for real-time transit control (holding, stop-skipping,
+                            speed adjustment), quantum and quantum-inspired optimization (QUBO/QUDO), mixed-integer
+                            programming, and metaheuristics (GA, NSGA-II).</p>
+                    </div>
+                    <div class="competency">
+                        <h4>Tools &amp; Platforms</h4>
+                        <p>Python, R, MATLAB; Power BI, Tableau, ArcGIS; PTV Visum, EMME; Streamlit dashboard
+                            development; AWS/Azure cloud services.</p>
+                    </div>
+                </div>
+            </section>
+
         </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; Shervin Ataeian 2025</p>
     </footer>
-          
-  </body>
+
+    <script src="main.js" defer></script>
+</body>
+
 </html>

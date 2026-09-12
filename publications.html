@@ -2,115 +2,124 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>My Website:Publications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script>
+    <title>Shervin Ataeian — Publications</title>
+    <meta name="description" content="Peer-reviewed publications and conference papers by Shervin Ataeian on deep reinforcement learning for transit control, quantum optimization, and rail/bus operations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" type="image/x-icon">
   </head>
 
   <body>
-    <!-- content here -->
-    <header>
-        <div id="Tabs">
-            <div id="Tab1"> 
-                <div>
-                    <a href="index.html">About Me</a>
-                </div>
-                <div>
-                    <a href="education.html">Education</a>
-                </div>
-                <div>
-                    <a href="experinece.html">Experience</a>
-                </div>
-                <div>
-                    <a href="publications.html">Publications</a>
-                </div>
-            </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-            <div id="Tab2">
-                <div>
-                    <a href="skills.html">Skills</a>
-                </div>
-                <div>
-                    <a href="interests.html">Interests</a>
-                </div>
-                <div>
-                    <a href="awards.html">Honors and Awards</a>
-                </div>
-                <div>
-                    <a href="contact.html">Contact Me</a>
-                </div>
-            </div>
+    <header class="site-header">
+      <div class="nav-inner">
+        <a href="index.html" class="brand">Shervin <span>Ataeian</span></a>
+        <div class="nav-right">
+          <nav class="site-nav" id="siteNav">
+            <a href="index.html">About</a>
+            <a href="education.html">Education</a>
+            <a href="experinece.html">Experience</a>
+            <a href="publications.html">Publications</a>
+            <a href="skills.html">Skills</a>
+            <a href="interests.html">Interests</a>
+            <a href="awards.html">Awards</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+            <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg>
+          </button>
+          <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+            <svg class="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
         </div>
+      </div>
     </header>
 
-    <div id="container">
+    <main id="main">
+      <div class="page-shell">
 
-        <aside id="Title-left">
-            <div>
-                <img src="Shervin.jpg" class="profile-pic">
+        <aside class="profile-card fade-in">
+          <div class="avatar-ring">
+            <img src="Shervin.jpg" class="avatar" alt="Portrait of Shervin Ataeian">
+          </div>
+          <h1 class="profile-name">Shervin Ataeian</h1>
+          <p class="profile-title">PhD Candidate · EIT</p>
+
+          <div class="social-row">
+            <a class="social-badge" href="https://www.linkedin.com/in/shervin-ataeian-a06121230/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a class="social-badge" href="https://scholar.google.com/citations?user=_E9WfBwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">GS</a>
+            <a class="social-badge" href="https://www.researchgate.net/profile/Shervin-Ataeian" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate">RG</a>
+            <a class="social-badge" href="https://www.instagram.com/shervinataieyan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+          </div>
+
+          <div class="profile-divider"></div>
+
+          <div class="profile-meta">
+            <div class="meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>2500 University Dr NW<br>Calgary, AB, Canada<br>T2N 1N4</span>
             </div>
-            <div>
-                <h1>Shervin Ataeian</h1>
-                <h4>PhD Candidate</h4>
-                <a href="https://www.linkedin.com/in/shervin-ataeian-a06121230/" target="_blank">
-                    <img src="In-Blue-34.png" alt="LinkedIn" class="logo">
-                </a>
-                <a href="https://scholar.google.com/citations?user=_E9WfBwAAAAJ&hl=en" target="_blank">
-                    <img src="768px-Google_Scholar_logo.svg.png" alt="Google Scholar" class="logo">
-                </a>
-                <a href="https://www.researchgate.net/profile/Shervin-Ataeian" target="_blank">
-                    <img src="RG.png" alt="ResearchGate" class="logo">
-                </a>
-                <a href="https://www.instagram.com/shervinataieyan/" target="_blank">
-                    <img src="Instagram.jpg" alt="Instagram" class="logo">
-                </a>
-            </div> 
-            <div id="address">
-                2500 University Dr NW<br>Calgary, AB, Canada<br>T2N 1N4<br>
-                <a href="mailto:shervin.ataieyan@gmail.com">
-                    <img src="email.png" alt="Email" class="logo">
-                </a>
-            </div>
+            <a class="meta-row meta-link" href="mailto:shervin.ataeian@ucalgary.ca">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>shervin.ataeian@ucalgary.ca</span>
+            </a>
+            <a class="meta-row meta-link" href="mailto:shervin.ataieyan@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>shervin.ataieyan@gmail.com</span>
+            </a>
+          </div>
         </aside>
 
-        <aside id="About-right">
+        <section class="content-card fade-in">
+          <div class="section-head">
+            <span class="eyebrow">Research Output</span>
+            <h2>Selected Publications</h2>
+          </div>
 
-            <div id="title">
-                <h3 class="title"> Recent Publications </h3>
-            </div>
+          <p class="lead" style="font-size:.92rem; text-align:left; margin-bottom:24px;">Several peer-reviewed journal articles, conference papers, and manuscripts in preparation, spanning deep reinforcement learning for transit control, quantum optimization, and rail/bus operations. Full record on my <a href="https://scholar.google.com/citations?user=_E9WfBwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" style="color:var(--accent); font-weight:600;">Google Scholar</a> profile.</p>
 
-            <div id="list">
-                <div>
-                    <ul list-style-type: checkbox;>
-                        <li class="article">Buchunde, S, Saidi, S., <b>Ataeian, S.</b>, 2023, Impact of Station Design and Passengers Flow on Urban Rail Dwell Time – A Systemwide Analysis Using APC and AVL Data,
-                            <i>Transportation Research Record</i>, 03611981241240762. (also accepted for presentation at TRB)</li>
-                        <li class="article"><b>Ataeian, S.</b>, Mahmoudi, R., Saidi, S., 2022, Bus transit service operations planning: modular vs conventional fleet, <i>WCTR2023 (World Conference on
-                            Transport Research)</i>.</li>
-                        <li class="article">Buchunde, S., <b>Ataeian, S.</b>, Saidi, S., 2023, Enhancing Performance of Simulation Models for Rail Transit Dwell Time Considering Passenger Flow Modeling, <i>WCTR2023 (World
-                            Conference on Transport Research)</i>.</li>
-                        <li class="article">Rashidi, S., <b>Ataeian, S.</b>, Ranjitkar, P., 2022, Estimating Bus Dwell Time: A Review of the Literature, <i>Transport Reviews: A Transnational Transdisciplinary Journal</i>, DOI: 10.1080/01441647.2021.2023692.</li>
-                        <li class="article">Jafari Kang, M., <b>Ataeian, S.</b> & Amiripour, S.M.M., 2021, A procedure for public transit OD matrix generation using smart card transaction data. <i>Public Transport</i>, 13, 81–100. <a href="https://link.springer.com/article/10.1007/s12469-020-00257-7?wt_mc=Internal.Event.1.SEM.ArticleAuthorOnlineFirst&utm_source=ArticleAuthorOnlineFirst&utm_medium=email&utm_content=AA_en_06082018&ArticleAuthorOnlineFirst_20201022">see here</a></li>
-                        <li class="article"><b>Ataeian, S.</b>, Solimanpur, M., Amiripour, M., Shankar, R., 2021, Synchronized Timetables for Bus Rapid Transit Networks in Small and Large Cities, <i>Scientia Iranica</i>, Transaction E: Industrial Engineering, 28(1), 477-491. doi: 10.24200/sci.2019.51501.2220. <a href="http://scientiairanica.sharif.edu/article_21515.html">see here</a></li>
-                        <li class="article"><b>Ataeian, S.</b>, Mostafavi, A., Nabiloo, R., 2020, Performance Analysis of Fixed Route Shared Taxi Services (Jitney) - Case Study of Tehran, Iran, <i>Computational Research Progress in Applied Science & Engineering (CRPASE)</i>, 6(01), 52-59. <a href="https://trid.trb.org/view/1697166">see here</a> </li>
-                        <li class="article"><b>Ataeian, S.</b>, Amiripour, M., Solimanpur, M., 2017, A Mathematical Programming Model for Bus Line Timetable Setting, <i>The 16th International Conference on Traffic and
-                            Transportation Engineering</i>.</li>
-                        <li class="article"><b>Ataeian, S.</b>, Solimanpur, M., Amiripour, M., 2017, A Mathematical Programming Model for Passenger Transfer Time Optimization in Public Transit Networks, <i>13th International
-                            Conference on Industrial Engineering</i>.
-                        <li class="article">Ataieyan, P., <b>Ataeian, S.</b>, Moghaddam, PA., 2015, Estimation of The Soil Organic Carbon by Image Processing Using Neural Networks, <i>The 9th National Congress on Agricultural
-                            Machinery Engineering (Biosystem Mechanics) and Mechanization</i>.</li>
-                    </ul>
-                </div>
-            </div>
-            
-        </aside>
+          <ol class="pub-list">
+            <li>Ataeian, S., Saidi, S., Nassir, N., 2026, Scaling Joint Electric Bus Scheduling and Charging Beyond Exact Optimization: A Quantum Optimization Benchmarking Framework. <span class="pub-note">(manuscript under preparation)</span></li>
+            <li>Ataeian, S., Mahmoudi, R., Saidi, S., Otero Becerril, M., 2026, Modular versus Conventional Bus Fleets: Joint Optimization of Service Frequency, Vehicle Configuration, and Dispatching. <span class="pub-note">(under review)</span></li>
+            <li>Ataeian, S., Saidi, S., 2026, Beyond Holding and Stop-skipping: Is Dynamic Speed Control Worth the Complexity? A Deep Reinforcement Learning Evaluation of Low-Frequency Transit Network. <span class="pub-note">(under review)</span></li>
+            <li>Ataeian, S., Saidi, S., 2026, Dynamic Control of Schedule-based and Headway-based Bus Services Using Deep Reinforcement Learning, <em>Transportmetrica A: Transport Science</em>. <a href="https://doi.org/10.1080/23249935.2026.2699198" target="_blank" rel="noopener noreferrer">see here</a></li>
+            <li>Ataeian, S., Saidi, S., 2026, Improving the Resilience of Schedule-based Bus Operations Using Reinforcement Learning-based Control Strategies, <em>TransitData 2026</em>.</li>
+            <li>Otero Becerril, M., Saidi, S., Ataeian, S., 2026, Analysis of Time Point Selection in Bus Routes: A Comparative Study of Four Canadian Cities Using GTFS Data, <em>TransitData 2026</em>.</li>
+            <li>Buchunde, S., Ataeian, S., Saidi, S., 2025, Enhancing Performance of Simulation Models for Rail Transit Dwell Time Considering Passenger Flow Modeling, <em>Transportation Research Procedia</em>, 82, 2750–2765.</li>
+            <li>Buchunde, S., Saidi, S., <strong>Ataeian, S.</strong>, 2023, Impact of Station Design and Passengers Flow on Urban Rail Dwell Time – A Systemwide Analysis Using APC and AVL Data, <em>Transportation Research Record</em>, 03611981241240762. <span class="pub-note">(accepted for presentation at TRB)</span></li>
+            <li>Ataeian, S., Mahmoudi, R., Saidi, S., 2023, Bus Transit Service Operations Planning: Modular vs Conventional Fleet, <em>WCTR2023 (World Conference on Transport Research)</em>.</li>
+            <li>Rashidi, S., Ataeian, S., Ranjitkar, P., 2022, Estimating Bus Dwell Time: A Review of the Literature, <em>Transport Reviews: A Transnational Transdisciplinary Journal</em>, DOI: 10.1080/01441647.2021.2023692.</li>
+            <li>Jafari Kang, M., Ataeian, S. &amp; Amiripour, S.M.M., 2021, A Procedure for Public Transit OD Matrix Generation Using Smart Card Transaction Data, <em>Public Transport</em>, 13, 81–100. <a href="https://doi.org/10.1007/s12469-020-00257-7" target="_blank" rel="noopener noreferrer">see here</a></li>
+            <li>Ataeian, S., Solimanpur, M., Amiripour, M., Shankar, R., 2021, Synchronized Timetables for Bus Rapid Transit Networks in Small and Large Cities, <em>Scientia Iranica</em>, Transaction E: Industrial Engineering, 28(1), 477-491. doi: 10.24200/sci.2019.51501.2220. <a href="http://scientiairanica.sharif.edu/article_21515.html" target="_blank" rel="noopener noreferrer">see here</a></li>
+            <li>Ataeian, S., Mostafavi, A., Nabiloo, R., 2020, Performance Analysis of Fixed Route Shared Taxi Services (Jitney) - Case Study of Tehran, Iran, <em>Computational Research Progress in Applied Science &amp; Engineering (CRPASE)</em>, 6(01), 52-59. <a href="https://trid.trb.org/view/1697166" target="_blank" rel="noopener noreferrer">see here</a></li>
+            <li>Ataeian, S., Amiripour, M., Solimanpur, M., 2017, A Mathematical Programming Model for Bus Line Timetable Setting, <em>The 16th International Conference on Traffic and Transportation Engineering</em>.</li>
+            <li>Ataeian, S., Solimanpur, M., Amiripour, M., 2017, A Mathematical Programming Model for Passenger Transfer Time Optimization in Public Transit Networks, <em>13th International Conference on Industrial Engineering</em>.</li>
+            <li>Ataieyan, P., Ataeian, S., Moghaddam, PA., 2015, Estimation of The Soil Organic Carbon by Image Processing Using Neural Networks, <em>The 9th National Congress on Agricultural Machinery Engineering (Biosystem Mechanics) and Mechanization</em>.</li>
+          </ol>
+        </section>
 
-    </div>
+      </div>
+    </main>
 
-    <footer>
-        <div id="copyright">
-            <p> &copy; Shervin Ataeian 2025</p>
-        </div>
+    <footer class="site-footer">
+      <p>&copy; Shervin Ataeian 2025</p>
     </footer>
-          
+
+    <script src="main.js" defer></script>
   </body>
 </html>

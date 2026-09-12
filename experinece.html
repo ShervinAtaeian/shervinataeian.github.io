@@ -2,238 +2,220 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>My Website:Experience</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script>
+    <title>Shervin Ataeian — Experience</title>
+    <meta name="description" content="Professional and academic experience of Shervin Ataeian, including research, teaching, a visiting researcher appointment at the University of Melbourne, and service roles at the University of Calgary.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" type="image/x-icon">
   </head>
 
   <body>
-    <!-- content here -->
-    <header>
-        <div id="Tabs">
-            <div id="Tab1"> 
-                <div>
-                    <a href="index.html">About Me</a>
-                </div>
-                <div>
-                    <a href="education.html">Education</a>
-                </div>
-                <div>
-                    <a href="experinece.html">Experience</a>
-                </div>
-                <div>
-                    <a href="publications.html">Publications</a>
-                </div>
-            </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-            <div id="Tab2">
-                <div>
-                    <a href="skills.html">Skills</a>
-                </div>
-                <div>
-                    <a href="interests.html">Interests</a>
-                </div>
-                <div>
-                    <a href="awards.html">Honors and Awards</a>
-                </div>
-                <div>
-                    <a href="contact.html">Contact Me</a>
-                </div>
-            </div>
+    <header class="site-header">
+      <div class="nav-inner">
+        <a href="index.html" class="brand">Shervin <span>Ataeian</span></a>
+        <div class="nav-right">
+          <nav class="site-nav" id="siteNav">
+            <a href="index.html">About</a>
+            <a href="education.html">Education</a>
+            <a href="experinece.html">Experience</a>
+            <a href="publications.html">Publications</a>
+            <a href="skills.html">Skills</a>
+            <a href="interests.html">Interests</a>
+            <a href="awards.html">Awards</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+            <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg>
+          </button>
+          <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+            <svg class="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
         </div>
+      </div>
     </header>
 
-    <div id="container">
+    <main id="main">
+      <div class="page-shell">
 
-        <aside id="Title-left">
-            <div>
-                <img src="Shervin.jpg" class="profile-pic">
+        <aside class="profile-card fade-in">
+          <div class="avatar-ring">
+            <img src="Shervin.jpg" class="avatar" alt="Portrait of Shervin Ataeian">
+          </div>
+          <h1 class="profile-name">Shervin Ataeian</h1>
+          <p class="profile-title">PhD Candidate · EIT</p>
+
+          <div class="social-row">
+            <a class="social-badge" href="https://www.linkedin.com/in/shervin-ataeian-a06121230/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a class="social-badge" href="https://scholar.google.com/citations?user=_E9WfBwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">GS</a>
+            <a class="social-badge" href="https://www.researchgate.net/profile/Shervin-Ataeian" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate">RG</a>
+            <a class="social-badge" href="https://www.instagram.com/shervinataieyan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+          </div>
+
+          <div class="profile-divider"></div>
+
+          <div class="profile-meta">
+            <div class="meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>2500 University Dr NW<br>Calgary, AB, Canada<br>T2N 1N4</span>
             </div>
-            <div>
-                <h1>Shervin Ataeian</h1>
-                <h4>PhD Candidate</h4>
-                <a href="https://www.linkedin.com/in/shervin-ataeian-a06121230/" target="_blank">
-                    <img src="In-Blue-34.png" alt="LinkedIn" class="logo">
-                </a>
-                <a href="https://scholar.google.com/citations?user=_E9WfBwAAAAJ&hl=en" target="_blank">
-                    <img src="768px-Google_Scholar_logo.svg.png" alt="Google Scholar" class="logo">
-                </a>
-                <a href="https://www.researchgate.net/profile/Shervin-Ataeian" target="_blank">
-                    <img src="RG.png" alt="ResearchGate" class="logo">
-                </a>
-                <a href="https://www.instagram.com/shervinataieyan/" target="_blank">
-                    <img src="Instagram.jpg" alt="Instagram" class="logo">
-                </a>
-            </div>
-            <div id="address">
-                2500 University Dr NW<br>Calgary, AB, Canada<br>T2N 1N4<br>
-                <a href="mailto:shervin.ataieyan@gmail.com">
-                    <img src="email.png" alt="Email" class="logo">
-                </a>
-            </div>
+            <a class="meta-row meta-link" href="mailto:shervin.ataeian@ucalgary.ca">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>shervin.ataeian@ucalgary.ca</span>
+            </a>
+            <a class="meta-row meta-link" href="mailto:shervin.ataieyan@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>shervin.ataieyan@gmail.com</span>
+            </a>
+          </div>
         </aside>
 
-        <aside id="About-right">
+        <section class="content-card fade-in">
+          <div class="section-head">
+            <span class="eyebrow">Professional Background</span>
+            <h2>Experience</h2>
+          </div>
 
-            <div id="title">
-                <h3 class="title"> Experience </h3>
-            </div>
+          <ol class="timeline">
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-top">
+                <h3>Intern, Parking &amp; Transportation Services</h3>
+                <span class="badge">2026</span>
+              </div>
+              <p class="timeline-org">University of Calgary — Calgary, Canada</p>
+            </li>
 
-            <div id="Universities">
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-top">
+                <h3>Visiting Researcher</h3>
+                <span class="badge">2026</span>
+              </div>
+              <p class="timeline-org">University of Melbourne — Melbourne, Australia</p>
+            </li>
 
-                <div id="bachelor">
-                    <div>
-                        <h3 class="name">Teaching Assistant for Courses:</h3>
-                            <ul  class="list1">
-                                <li>Transportation Engineering I & II</li>
-                                <li>Uncertainty, Risk and Reliability</li>
-                                <li>Ethics, Law and the Engineering Profession</li>
-                            </ul>
-                        <p>University of Calgary</p>
-                    </div>
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-top">
+                <h3>Research Assistant</h3>
+                <span class="badge">2022 – Present</span>
+              </div>
+              <p class="timeline-org">University of Calgary — Calgary, Canada</p>
+            </li>
 
-                    <div class="year">
-                        <p>2022-present</p>
-                        <p>Calgary, Canada</p>
-                    </div>
-                </div>
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-top">
+                <h3>Teaching Assistant</h3>
+                <span class="badge">2022 – Present</span>
+              </div>
+              <p class="timeline-org">University of Calgary — Calgary, Canada</p>
+              <p class="timeline-desc">Courses:</p>
+              <ul class="timeline-list">
+                <li>Transportation Engineering I &amp; II</li>
+                <li>Uncertainty, Risk and Reliability</li>
+                <li>Ethics, Law and the Engineering Profession</li>
+              </ul>
+            </li>
 
-                <hr  class="stylish">
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-top">
+                <h3>Thesis Advisor</h3>
+                <span class="badge">2023 – 2025</span>
+              </div>
+              <p class="timeline-org">University of Calgary — Calgary, Canada</p>
+            </li>
 
-                <div id="bachelor">
-                    <div>
-                        <h3 class="name">Research Assistant</h3>
-                        <p>University of Calgary</p>
-                    </div>
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-top">
+                <h3>Graduate Student Representative on the Schulich School of Engineering Sustainability Systems Engineering Council</h3>
+                <span class="badge">2023 – Present</span>
+              </div>
+              <p class="timeline-org">University of Calgary — Calgary, Canada</p>
+            </li>
 
-                    <div class="year">
-                        <p>2022-present</p>
-                        <p>Calgary, Canada</p>
-                    </div>
-                </div>
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-top">
+                <h3>Member of the Advisory Selection Committee for the Sustainability Systems Engineering Associate Dean Search</h3>
+                <span class="badge">2023 – 2025</span>
+              </div>
+              <p class="timeline-org">University of Calgary — Calgary, Canada</p>
+            </li>
 
-                <hr  class="stylish">
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-top">
+                <h3>Reviewer</h3>
+                <span class="badge">2020 – Present</span>
+              </div>
+              <p class="timeline-desc">Journals &amp; conferences:</p>
+              <ul class="timeline-list">
+                <li>Public Transport Journal (Springer)</li>
+                <li>Scientific Reports Journal (Springer Nature)</li>
+                <li>Transportation Research Record (TRR)</li>
+                <li>TRB Annual Meeting</li>
+                <li>World Conference on Transportation Research (WCTR2023)</li>
+                <li>Asian Journal of Advances in Research</li>
+                <li>Current Journal of Applied Science and Technology</li>
+              </ul>
+            </li>
 
-                <div id="bachelor">
-                    <div>
-                        <h3 class="name">Master’s Thesis Advisor</h3>
-                        <p>University of Calgary</p>
-                    </div>
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-top">
+                <h3>Civil Engineering Graduate Society Representative</h3>
+                <span class="badge">2022</span>
+              </div>
+              <p class="timeline-org">University of Calgary — Calgary, Canada</p>
+            </li>
 
-                    <div class="year">
-                        <p>2022-2024</p>
-                        <p>Calgary, Canada</p>
-                    </div>
-                </div>
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-top">
+                <h3>Independent Transportation Researcher</h3>
+                <span class="badge">2017 – 2021</span>
+              </div>
+            </li>
 
-                <hr  class="stylish">
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-top">
+                <h3>Industrial Engineering Intern</h3>
+                <span class="badge">2014</span>
+              </div>
+              <p class="timeline-org">Pakdis Co. — Urmia, Iran</p>
+            </li>
+          </ol>
 
-                <div id="bachelor">
-                    <div class="university">
-                        <h3 class="name">Graduate Student Representative on the Schulich  <br> School of Engineering Sustainability Systems Engineering Council</h3>
-                        <p>University of Calgary</p>
-                    </div>
+          <p class="muted-note">Please see my full resume <a href="https://www.researchgate.net/profile/Shervin-Ataeian" target="_blank" rel="noopener noreferrer">here</a>.</p>
+        </section>
 
-                    <div class="year">
-                        <p>2023-2024</p>
-                        <p>Calgary, Canada</p>
-                    </div>
-                </div>
+      </div>
+    </main>
 
-                <hr  class="stylish">
-
-                <div id="bachelor">
-                    <div>
-                        <h3 class="name">A Member of the Advisory Selection Committee for <br> the Sustainability Systems Engineering Associate Dean Search</h3>
-                        <p>University of Calgary</p>
-                    </div>
-
-                    <div class="year">
-                        <p>2023-2024</p>
-                        <p>Calgary, Canada</p>
-                    </div>
-                </div>
-
-                <hr  class="stylish">
-
-                <div id="bachelor">
-                    <div>
-                        <h3 class="name">Reviewer for:</h3>
-                            <ul  class="list1">
-                                <li>Public Transport Journal (Springer)</li>
-                                <li>Scientific Reports Journal (Springer Nature)</li>
-                                <li>Transportation Research Record (TRR)</li>
-                                <li>TRB Annual Meeting</li>
-                                <li>World Conference on Transportation Research (WCTR2023)</li>
-                                <li>Asian Journal of Advances in Research</li>
-                                <li>Current Journal of Applied Science and Technology</li>
-                            </ul>
-                    </div>
-
-                    <div class="year">
-                        <p>2020-present</p>
-                    </div>
-                </div>
-
-
-                <hr  class="stylish">
-
-                <div id="bachelor">
-                    <div>
-                        <h3 class="name">Civil Engineering Graduate Society Representative</h3>
-                        <p>University of Calgary</p>
-                    </div>
-
-                    <div class="year">
-                        <p>2022-2023</p>
-                        <p>Calgary, Canada</p>
-                    </div>
-                </div>
-
-                <hr  class="stylish">
-
-                <div id="bachelor">
-                    <div>
-                        <h3 class="name">Chairperson of the Session</h3>
-                        <p>Bridging Transportation Researchers Conference (BTR#2) <a href="https://www.youtube.com/watch?v=rdLWocdNC_M&list=PL9Qv7hTVQuARvaouyrzieJexx-Q-39e91&index=4&t=18099s" target="_blank">(Youtube Video)</a></p>
-                    </div>
-
-                    <div class="year">
-                        <p>2020</p>
-                    </div>
-                </div>
-
-
-                <hr  class="stylish">
-
-                <div id="bachelor">
-                    <div>
-                        <h3 class="name">Industrial Engineering Intern</h3>
-                        <p>Pakdis Co.</p>
-                    </div>
-
-                    <div class="year">
-                        <p>2016-2017</p>
-                        <p>Urmia, Iran</p>
-                    </div>
-                </div>
-
-                <p id="credentials">
-                    Please see my full resume <a href="https://www.researchgate.net/profile/Shervin-Ataeian" target="_blank">here</a>.
-                </p>
-            </div>
-
-        </aside>
-
-    </div>
-
-    <footer>
-        <div id="copyright">
-            <p> &copy; Shervin Ataeian 2025</p>
-        </div>
+    <footer class="site-footer">
+      <p>&copy; Shervin Ataeian 2025</p>
     </footer>
-          
+
+    <script src="main.js" defer></script>
   </body>
 </html>
-
-
