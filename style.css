@@ -396,35 +396,6 @@ a.meta-link:hover { color: var(--accent); }
 .affiliations { font-size: .9rem; color: var(--ink-500); margin: -6px 0 28px; line-height: 1.6; }
 .affiliations strong { color: var(--ink-700); }
 
-.stat-strip {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-  gap: 12px;
-  margin: 22px 0;
-  padding: 18px 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-.stat { text-align: center; }
-
-.stat-num {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--accent);
-  letter-spacing: -.02em;
-}
-
-.stat-label {
-  display: block;
-  font-size: .74rem;
-  color: var(--ink-500);
-  margin-top: 2px;
-  text-transform: uppercase;
-  letter-spacing: .04em;
-}
-
 /* ==================== Core competencies ==================== */
 
 .competency-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
